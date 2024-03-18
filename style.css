@@ -26,6 +26,11 @@ body {
   background-color: rgb(130, 122, 202);
   font-family: 'Nunito', sans-serif;
   color: #fff;
+  margin-bottom: 10px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 /* HEADER */
@@ -35,7 +40,7 @@ header {
   margin: 50px 0;
 }
 
-header > h1 {
+header>h1 {
   display: inline;
   padding: 10px 100px;
   background-color: rgb(99, 92, 158);
@@ -45,7 +50,7 @@ header > h1 {
   text-align: center;
 }
 
-header > h1:hover {
+header>h1:hover {
   opacity: 0.8;
 }
 
@@ -72,7 +77,8 @@ main {
   gap: 25px;
 }
 
-.color-picker, button {
+.color-picker,
+button {
   transition: transform 0.1s ease-in-out;
 }
 
@@ -109,26 +115,27 @@ button {
   font-weight: 500;
 }
 
-button:hover, button:focus-visible {
+button:hover,
+button:focus-visible {
   transform: scale(1.05);
   opacity: 0.85;
 }
 
-.slider > input {
+.slider>input {
   width: 160px;
   margin-bottom: 7.5px;
   cursor: grab;
 }
 
-.slider > input::-webkit-slider-thumb:active {
+.slider>input::-webkit-slider-thumb:active {
   cursor: grabbing;
 }
 
-.slider > input::-moz-range-thumb:active {
+.slider>input::-moz-range-thumb:active {
   cursor: grabbing;
 }
 
-.slider > .grid-size {
+.slider>.grid-size {
   font-weight: 500;
   text-align: center;
 }
@@ -153,9 +160,9 @@ button:hover, button:focus-visible {
 }
 
 div.square {
-    box-sizing: border-box;
-    border: 0.5px solid rgba(0, 0, 0, 0.05);
-    flex: 1 1 auto;
+  box-sizing: border-box;
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  flex: 1 1 auto;
 }
 
 /* FOOTER */
@@ -167,7 +174,7 @@ footer {
   right: 0;
   margin-right: auto;
   margin-left: auto;
-  width: 200px;
+  width: 250px;
   font-weight: 600;
   font-size: 1.2rem;
 }
