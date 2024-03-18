@@ -62,15 +62,17 @@ function newGridSize(size) {
 }
 
 function attachEventListeners(square) {
-  square.addEventListener(type, (e) => {
+  square.addEventListener('mousedown', (e) => {
     mouseDown = true;
     paintSquare(e.target);
     e.preventDefault();
   });
-  square.addEventListener('mouseup touchend', () => {
+
+  square.addEventListener('mouseup', () => {
     mouseDown = false;
   });
-  square.addEventListener('mouseover touchmove', (e) => {
+
+  square.addEventListener('mouseover', (e) => {
     if (mouseDown) paintSquare(e.target);
   });
 }
